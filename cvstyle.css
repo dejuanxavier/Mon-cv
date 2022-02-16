@@ -1,156 +1,203 @@
-body { 
-    border: 0;
-    margin: 0;
-    padding: 0;  
-}
 
-header { 
-    background-color: rgb(0, 0, 54);
-    line-height: 80px;
-    height: 15%;
-    justify-content: flex-start;
+
+#banniere {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: rgb(80, 80, 100);
     display:flex;
-    flex-wrap:wrap;
     justify-content:space-between;
-    align-items:center;
-    align-content:center;
 }
 
-nav { 
-    background-color: darkslategrey;
+#info-ban {
+    border-right: 1px solid white;
+    width: 30%;
+    text-align:center;
+    color:white;
+    background-color:rgb(0, 20, 40);
+
+}
+
+#titre {
+    border: 1px solid green;
+    width: auto;
+    justify-content:flex-start;
+}
+
+.dev {
+    color:white;
+    font-weight: bold;
+}
+
+#photo {
+    border: 1px solid yellow;
+    width: auto;    
+}
+
+.info-p {
+    border: 1px solid black;
+}
+
+/* Boutons de navigation */
+
+#suppboutons {
+    background-color: rgb(165, 165, 165);
+    border-radius: 2px round;
+    float: right;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px black solid;
+    box-shadow: inset 0 0 1em rgb(0, 0, 0), 0 0 2em rgb(0, 0, 255);
+    height: 30px;
+}
+    
+
+.bouton {
+    background-color: rgb(45, 108, 163);
+    border-radius: 10px;
+}
+.bouton:hover {
+    transition:all 1s;
+    background-color: aliceblue;
+}
+
+/* Section bandeau de gauche */
+
+#cotegauche {
+    position: inherit;
+    display: block;
+}
+
+#bandeau {
+    position: absolute;
+    display: block;
+    flex-direction:column;
+    width: 30%;
+    Height: 800px;
+    background-color: rgb(0, 20, 40);
+    text-align:center;
+    border-right: 1px solid white 
+    
+}
+
+#informations {
+    flex-direction:row;
+    align-items: flex-start;
+}
+
+.info-s {
+    color:white;
+    margin-top: 10px;
+} 
+
+#experiences {
+    color:rgb(148, 148, 148);
+    margin-top: 30px;
+    text-size-adjust: auto;
+}
+
+/* Section principale */
+
+#base {
+    float:right;
+    display: block;
+    width: 70%;
+    height: 800px;
+    background-color: beige;
+    background-repeat:repeat;
     display:flex;
     flex-direction: column;
-    justify-content:center;
-    flex-wrap:wrap;
-    width:95%;
-    margin-left:auto;
-    margin-right:auto;
-    align-items:center;
-    align-content:center;
-}
-
-#navflex {
-    display:flex;
     justify-content: space-around;
 }
 
-a {
-    border: 3px solid red;
-    color:red;
-    height: 50px;
-    width: 100px;
+
+.journal {
+    height: 300px;
+    background-color: beige;
+    box-shadow: inset 0 0 2em rgb(166, 167, 255), 0 0 2em rgb(0, 0, 0);
 
 }
 
-section { 
-    background-color: #e6e6e6; 
+#menu-accordeon {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+  width: auto;
+}
+#menu-accordeon ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+}
+#menu-accordeon li {
+   background-color:#729EBF; 
+   background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+   background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+   border-radius: 6px;
+   margin-bottom:2px;
+   box-shadow: 3px 3px 3px #999;
+   border:solid 1px #333A40
+}
+#menu-accordeon li li {
+   max-height:0;
+   overflow: hidden;
+   transition: all .5s;
+   border-radius:0;
+   background: #444;
+   box-shadow: none;
+   border:none;
+   margin:0
+}
+#menu-accordeon a {
+  display:block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 0;
+  font-family: verdana;
+  font-size:1.2em
+}
+#menu-accordeon ul li a, #menu-accordeon li:hover li a {
+  font-size:1em
+}
+#menu-accordeon li:hover {
+   background: #729EBF
+}
+#menu-accordeon li li:hover {
+   background: #999;
+}
+#menu-accordeon ul li:last-child {
+   border-radius: 0 0 6px 6px;
+   border:none;
+}
+#menu-accordeon li:hover li {
+  max-height: 15em;
 }
 
-footer { 
-    background-color: #000018; 
-}
-
-header, nav, article, footer { 
-    color: white;
-    padding: 10px; 
-}
-
-footer { 
-    height: 10%;
-    text-align: center; 
-}
-
-#photo { 
-    border: 3px solid red;
-    color:red;
-    height: 100px;
-    width: 100px;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-}
-
-
-.nom {
-    height: 200px;
-    width: 500px;
-    float: left;
-    margin-left: 20px;
-    border: 3px solid red;
-    color:rgb(255, 255, 255);
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.infos {
-    height: 200px;
-    width: 300px;
-    float: left;
-    margin-left: 20px;
-    border: 3px solid red;
-    color:rgb(255, 255, 255);
-    justify-content: flex-start;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-}
-
-
-p { 
-    margin: 0 0 15px 0; 
-}
-
-nav a { 
-    border-bottom: 1px solid rgba(255,255,255,.3);
-    color: white;
+#basdepage {
     display: block;
-    line-height: 40px; 
-}
-
-html, body{
-    height:100%;
-    min-height:20%;
-}
-main{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(7, 0, 49);
     display:flex;
-    height: 75%;
-
+    flex-direction: row;
+    justify-content: center;
 }
 
-main nav{
-    width: 25%;
+#logo {
+    justify-content: center;
+    border-radius:40px;
+    background: linear-gradient(0.25turn, #002ba1, #118f00, #000000);
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    color:#ebf8e1;
 }
 
-main section{
-    flex:1;
-}
-
-#button {
-    border: 3px solid red;
-    display:flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #000018;
-}
-
-#cv {
-    border: 3px solid red;
-    justify-content:flex-start;
-    padding: 15px;
-    color:aliceblue;
-}
-
-#portfolio {
-    border: 3px solid red;
-    justify-content:flex-end;
-    padding: 15px;
-    color:aliceblue;
-}
-
-#competences {
-    display:flex;
-   border: 3px solid red;
-    justify-content:flex-start;
-    padding: 15px;
+#logo:hover {
+    background-color: #050035;
+    transform:rotate(10400deg);
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    transition: all 2s;
 }
